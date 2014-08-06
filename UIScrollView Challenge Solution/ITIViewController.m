@@ -20,6 +20,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.globalImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"worldMap.jpeg"]];
     
+   
+    self.scrollView.contentSize = self.globalImageView.frame.size;
     [self.scrollView addSubview:self.globalImageView];
     self.scrollView.maximumZoomScale = 2.0;
     self.scrollView.minimumZoomScale = 0.5;
