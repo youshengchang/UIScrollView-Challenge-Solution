@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ITIViewController : UIViewController
+@interface ITIViewController : UIViewController <UIScrollViewDelegate>
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic)UIImageView *globalImageView;
+
 
 @end
